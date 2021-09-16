@@ -17,8 +17,8 @@ namespace cal
             InitializeComponent();
         }
 
-        int number1 = 0;
-        int number2 = 0;
+        String number1 = "";
+        String number2 = "";
         String oper = "";
 
         private void numClick(object sender, EventArgs e)
@@ -29,7 +29,7 @@ namespace cal
 
         private void operClick(object sender, EventArgs e)
         {
-            number1 = int.Parse(textBox1.Text);
+            number1 = textBox1.Text;
             Button button = (Button)sender;
             oper += button.Text;
             textBox1.Text = "";
@@ -37,23 +37,19 @@ namespace cal
 
         private void equalClick(object sender, EventArgs e)
         {
-            number2 = int.Parse(textBox1.Text);
+            number2 = textBox1.Text;
             int result = 0;
-            switch (oper)
-            {
-                case "+":
-                    result = number1 + number2;
-                    break;
-                case "-":
-                    result = number1 - number2;
-                    break;
-                case "*":
-                    result = number1 * number2;
-                    break;
-                case "/":
-                    result = number1 / number2;
-                    break;
-            }
+
+            //Score score = new Score();
+            //score.name = "s";
+            //score.Value = 600;
+            //score.printScore();
+
+            Cal cal = new Cal();
+            cal.Number1 = number1;
+            cal.Number2 = number2;
+            cal.Oper = oper;
+            result = cal.Result();
             textBox1.Text = result.ToString();
         }
     }
