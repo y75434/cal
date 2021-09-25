@@ -39,27 +39,28 @@ namespace cal
         public int Result()
         {
             int Result = 0;
+            Operator ans = null; 
             switch (Oper)
             {
                 case "+":
-                    Add add = new Add();
-                    Result = add.Result(this.number1 , this.number2);
+                    ans = new Add(this.number1, this.number2);
+      
                     break;
                 case "-":
-                    Minus minus = new Minus();
-                    Result = minus.Result(this.number1 , this.number2);
+                    ans = new Minus(this.number1, this.number2);
+       
                     break;
                 case "*":
-                    Mutli mutli = new Mutli();
-                    Result = mutli.Result(this.number1 , this.number2);
+                    ans = new Mutli(this.number1, this.number2);
+
                     break;
                 case "/":
-                    Division division = new Division();
-                    Result = division.Result(this.number1 , this.number2);
+                    ans = new Division(this.number1, this.number2);
                     break;
             }
-            return Result;
-        }
+          
+
+            return ans.Result();
 
         
     }
