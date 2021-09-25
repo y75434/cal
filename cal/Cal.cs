@@ -61,7 +61,6 @@ namespace cal
           
 
             return ans.Result();
-        }
 
         
     }
