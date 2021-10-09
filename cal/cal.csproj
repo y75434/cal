@@ -59,6 +59,7 @@
     <Compile Include="Operator\Minus.cs" />
     <Compile Include="Operator\Mutli.cs" />
     <Compile Include="Operator\Operator.cs" />
+
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Score.cs" />
