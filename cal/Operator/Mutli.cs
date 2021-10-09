@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace cal.Operators
 {
 
-    class Mutli : Operator
+    class Mutli : Operator 
     {
         public Mutli(int number1, int number2) : base(number1, number2)
         {

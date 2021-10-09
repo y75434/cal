@@ -13,6 +13,10 @@ namespace cal.Operators
         {
 
         }
+       public void test()
+        {
+
+        }
         public override int Result()
         {
            return this.number1 + this.number2;

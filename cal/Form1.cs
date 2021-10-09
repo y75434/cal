@@ -51,6 +51,16 @@ namespace cal
             cal.Oper = oper;
             result = cal.Result();
             textBox1.Text = result.ToString();
+            //textBox1.Text = resultValue(number1, number2, oper).ToString();
+
+
+
+
+        }
+
+        public int resultValue(String number1,String number2,String oper)
+        {
+            return 0;
         }
     }
 }
